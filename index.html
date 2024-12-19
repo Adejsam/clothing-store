@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./public/img/logo/ginger.png" alt="comp" class="logo-image"
+            /></a>
+          </div>
+          <div class="nav-container">
+            <nav class="nav-menu">
+              <ul class="nav-items">
+                <li class="nav-item"><a class="inuse" href="./index.html">Home</a></li>
+                <li class="nav-item">Shop<img src="./public/icon/chevron-down.svg" alt="down arrow" width="18">
+                  <ul class="dropDown">
+                    <li class="dropDownItem"><a class="dropDownLink" href="./menfashion.html">Men Fashion</a></li>
+                    <li class="dropDownItem"><a class="dropDownLink" href="./femalefashion.html">Female Fashion</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-icon">
+            <a class="icon-link" href="./cart.html"
+              ><img class="icon" width="20" height="20" src="./public/icon/cart.svg"
+            /></a>
+            <a class="icon-link" href="./favorite.html"
+            ><img class="icon" width="20" height="20" src="./public/icon/heart.svg"
+          /></a>
+            <div class="toggle"><img src="./public/icon/list.svg" alt=""></div>
+          </div>
+        </div>
+        <!-- side bar -->
+        <div class="sidebar">
+          <nav class="sidebar-nav">
+            <ul class="sidebar-items">
+              <li class="sidebar-item"><a class="inuse" href="./index.html">Home</a></li>
+              <li class="sidebar-item">Shop<img src="./public/icon/chevron-down.svg" alt="down arrow" width="18">
+                <ul class="sidebar-dropDown">
+                  <li class="sidebar-dropDownItem"><a class="dropDownLink" href="./menfashion.html">Men Fashion</a></li>
+                  <li class="sidebar-dropDownItem"><a class="dropDownLink" href="./femalefashion.html">Female Fashion</a></li>
+                </ul>
+              </li>
+              <li class="sidebar-item"><a href="./contact.html">Contact</a></li>
+              <li class="sidebar-item"><a href="./about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+
+    </header>
+    <section class="hero">
+      <div class="hero-container">
+        <img src="./public/img/banner/banner-3.png" class="banner1" alt="" />
+        <div class="hero-info">
+          <p class="hero-p1">Best Deals</p>
+          <h1 class="hero-heading1">Super Value Deals</h1>
+          <h1 class="hero-heading2">On all products</h1>
+          <p class="hero-p2">Save more. up to 70% off</p>
+          <button class="hero-button">Shop Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section -->
+    <section class="product">
+      <h1 class="product-heading">
+        <span class="product-heading-span2">Our Featured</span> <span class="product-heading-span">Products</span>
+      </h1>
+      <div class="product-container">
+        <div class="product-box">
+          <span class="product-discount">-25%</span>
+          <img src="./public/img/products/f1.jpg" alt="shirt" class="product-img" />
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Vintage Holiday Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$18.60<spam class="former-price">$20.30</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(90)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n1.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-30%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Light Blue Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$15.00<spam class="former-price">$18.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(30)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/f2.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-27%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Palmtree Short Sleeve Shirt </p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$25.20<spam class="former-price">$27.60</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(20)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n2.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-35%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">White and Black Checkers</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$22.30<spam class="former-price">$25.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(100)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/f3.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-30%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Roses Short Sleeve Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$27.59<spam class="former-price">$29.99</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(15)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n3.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-29%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Off White Plain Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$15.70<spam class="former-price">$18.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(45)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n4.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-17%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Cooprete Short Sleeve shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$19.00<spam class="former-price">$21.80</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(112)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n8.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-42%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Short Sleeve shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$16.00<spam class="former-price">₦19.50</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(10)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/f8.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-38%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">V-shaped Female Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$24.99<spam class="former-price">$27.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(77)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/f7.jpg" alt="trouser" class="product-img" />
+          <span class="product-discount">-15%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Female Three-quater Trousers </p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">21.20<spam class="former-price">$23.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(29)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n5.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-5%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Dirty Blue Long Sleeve Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$29.99<spam class="former-price">$31.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(98)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/n7.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-32%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Coffee Brown Cooperate Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$35.50<spam class="former-price">$38.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(34)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section>
+      <div class="review-container">
+        <img src="./public/img/testimonials/rachel.jpg" alt="Client Photo">
+        <h2>Client Reviews</h2>
+        <p>Absolutely love this store! Every piece I’ve bought has been stylish, comfortable, and true to size. The prices are great for the quality, and I always get compliments when I wear their outfits. Highly recommend!.</p>
+        <div class="client-name">Racheal Jevenick</div>
+        <div class="client-position">CEO of Addle</div>
+    </div>
+    </section>
+
+    <!-- New Arrivals section -->
+    <section class="new-arrival-section">
+      <h1 class="new-arrival-heading"><span class="new-arrival-span">New</span> <span class="new-arrival-span2">Arrivals</span></h1>
+      <div class="product-container">
+        <div class="product-box">
+          <span class="product-discount">-25%</span>
+          <img src="./public/img/products/product-1.webp" alt="shirt" class="product-img" />
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Nike Dark Jogers</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$49.99<spam class="former-price">$60.00</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(10)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/adidas 2.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-30%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Dark Blue Adidas Cardigan </p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$52.50<spam class="former-price">$69.80</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(05)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/product-13.webp" alt="shirt" class="product-img" />
+          <span class="product-discount">-27%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Nike Black Joggers</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$100.40<spam class="former-price">$120.80</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(07)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/adidas3.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-35%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Black Adidas Zipper Jacket</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$110.40<spam class="former-price">$130.39</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(12)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/product-4.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-30%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Black Puma Polo Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$70.99<spam class="former-price">$85.90</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(10)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/product-6.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-29%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Black Round neck Shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$85.60<spam class="former-price">$95.40</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(11)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/23.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-17%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Cooprete Short Sleeve shirt</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$56.70<spam class="former-price">$61.20</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <p class="rating-no">(09)</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-box">
+          <img src="./public/img/products/jacket.jpg" alt="shirt" class="product-img" />
+          <span class="product-discount">-42%</span>
+          <div class="product-info"> 
+            <div class="head-heart-box">
+              <p class="product-head">Purple Cotton Coat</p>
+              <img class="blank-heart" onclick="favHeart(this)" src="./public/icon/heart.svg" width="18" alt="heart">
+            </div>
+            <p class="product-price">$100.50<spam class="former-price">$130.90</spam></p>
+            <div class="star-box">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/full star.svg"  alt="star" class="star">
+              <img src="./public/icon/half star.svg"  alt="star" class="star">
+              <p class="rating-no">(15)</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Other banner -->
+    <section>
+      <div class="banner-container">
+        <div class="banner-info">
+          <h1 class="banner-heading">Gifts for Less!</h1>
+          <h1 class="banner-heading2">Don’t Miss Our December Deals!</h1>
+          <p class="banner-paragraph">Limited Time: December 10–24!</p>
+        </div>
+        <div class="image-box">
+          <img src="./public/img/banner/hero4.png" alt="banner" class="second-banner">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="brand-logo-container">
+        <img src="./public/img/logos/logo-nike.png" alt="" class="brand-logo">
+        <img src="./public/img/logos/logo-prada.png" alt="" class="brand-logo">
+        <img src="./public/img/logos/logo-adidas.png" alt="" class="brand-logo">
+        <img src="./public/img/logos/logo-versace.png" alt="" class="brand-logo">
+        <img src="./public/img/logos/logo-puma.png" alt="" class="brand-logo">
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <img src="./public/img/logo/ginger dark.png" alt="logo" class="logo-image">
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Follow Us</h3>
+            <ul >
+              <li ><a href="#" class="footer-link-logo"><img src="./public/icon/instagram.svg" alt="instagram logo">Instagram</a></li>
+              <li><a href="#" class="footer-link-logo"><img src="./public/icon/facebook.svg" alt="facebook logo">Facebook</a></li>
+              <li><a href="#" class="footer-link-logo"><img src="./public/icon/twitter.svg" alt="twitter logo"/>Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscription">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ginger. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

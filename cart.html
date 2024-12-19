@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./public/img/logo/ginger.png" alt="comp" class="logo-image"
+          /></a>
+        </div>
+        <div>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="./index.html">Home</a></li>
+              <li class="nav-item">
+                  >Shop<img src="./public/icon/chevron-down.svg" alt="down arrow"
+                />
+                <ul class="dropDown">
+                  <li class="dropDownItem">
+                    <a class="dropDownLink" href="./menfashion.html">Men Fashion</a>
+                  </li>
+                  <li class="dropDownItem">
+                    <a class="dropDownLink" href="./femalefashion.html">Female Fashion</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="./contact.html">Contact</a></li>
+              <li class="nav-item"><a href="./about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-icon">
+          <a class="inuse" href="./cart.html"
+            ><img class="icon" width="20" height="20" src="./public/icon/cart.svg"
+          /></a>
+          <a class="icon-link" href="./favorite.html"
+            ><img class="icon" width="20" height="20" src="./public/icon/heart.svg"
+          /></a>
+          <div class="toggle"><img src="./public/icon/list.svg" alt=""></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- cart section -->
+    <section class="cart-container">
+      <div class="cart-header">
+        <span class="cart-icon"><img src="./public/icon/icons8-shopping-cart.gif" alt="" ></span>
+        <h1>CART</h1>
+        <h2>Add your coupon code & SAVE upto 70%!</h2>
+      </div>
+      <div class="cart-table">
+        <table>
+          <thead>
+            <tr>
+              <th>REMOVE</th>
+              <th>IMAGE</th>
+              <th>PRODUCT</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>SUBTOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button class="remove"><img src="./public/icon/trash3.svg" alt="trash icon">Remove</button></td>
+              <td><img class="cart-image" src="./public/img/products/f1.jpg" alt="Cartoon Astronaut T-Shirt" /></td>
+              <td>Vintage Holiday Shirt</td>
+              <td>$18.60</td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>$18.60</td>
+            </tr>
+            <tr>
+              <td><button class="remove"><img src="./public/icon/trash3.svg" alt="trash icon">Remove</button></td>
+              <td><img class="cart-image" src="./public/img/products/n7.jpg"" alt="Cartoon Astronaut T-Shirt" /></td>
+              <td>Coffee Brown Cooperate Shirt</td>
+              <td>$35.50</td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>$53.10</td>
+            </tr>
+            <tr>
+              <td><button class="remove"><img src="./public/icon/trash3.svg" alt="trash icon">Remove</button></td>
+              <td><img class="cart-image" src="./public/img/products/corporate gown2.jpg" alt="Cartoon Astronaut T-Shirt" /></td>
+              <td>Women Black Gown</td>
+              <td>$80.50</td>
+              <td><input type="number" value="1" min="1" /></td>
+              <td>$133.60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cart-section">
+        <div class="apply-coupon">
+          <h2>Apply Coupon</h2>
+          <input type="text" placeholder="Enter Your Coupon" />
+          <button>Apply</button>
+        </div>
+        <div class="cart-totals">
+          <h2>Cart Totals</h2>
+          <table>
+            <tr>
+              <td>Cart Subtotal</td>
+              <td>$335</td>
+            </tr>
+            <tr>
+              <td>Shipping</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$335</td>
+            </tr>
+          </table>
+           
+          <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <img src="./public/img/logo/ginger dark.png" alt="logo" class="logo-image" />
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/instagram.svg" alt="instagram logo" />Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/facebook.svg" alt="facebook logo" />Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/twitter.svg" alt="twitter logo" />Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscription">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ginger. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

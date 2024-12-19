@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./favorite.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./public/img/logo/ginger.png" alt="comp" class="logo-image"
+          /></a>
+        </div>
+        <div>
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="./index.html">Home</a></li>
+              <li class="nav-item">
+                Shop<img src="./public/icon/chevron-down.svg" alt="down arrow" />
+                <ul class="dropDown">
+                  <li class="dropDownItem">
+                    <a class="dropDownLink" href="./menfashion.html">Men Fashion</a>
+                  </li>
+                  <li class="dropDownItem">
+                    <a class="dropDownLink" href="./femalefashion.html">Female Fashion</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="./contact.html">Contact</a></li>
+              <li class="nav-item"><a href="./about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-icon">
+          <a class="icon-link" href="./cart.html"
+            ><img class="icon" width="20" height="20" src="./public/icon/cart.svg"
+          /></a>
+          <a class="inuse" href="./favorite.html"
+            ><img class="icon" width="20" height="20" src="./public/icon/heart.svg"
+          /></a>
+          <div class="toggle"><img src="./public/icon/list.svg" alt="" /></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <h2 class="favorite-heading">Favorite</h2>
+      <div class="favorites-container">
+        <div class="favorite-item">
+          <img src=./public/img/products/f2.jpg alt="Product 1">
+          <div class="item-details">
+            <h2>Palmtree Short Sleeve Shirt</h2>
+            <p>$25.20</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+        <div class="favorite-item">
+          <img src="./public/img/products/jacket.jpg" alt="Product 2" />
+          <div class="item-details">
+            <h2>Purple Cotton Coat</h2>
+            <p>$100.50</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+        <div class="favorite-item">
+          <img src="./public/img/products/adidas 2.jpg" alt="Product 3" />
+          <div class="item-details">
+            <h2>Dark Blue Adidas Cardigan</h2>
+            <p>$52.50</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <img src="./public/img/logo/ginger dark.png" alt="logo" class="logo-image" />
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/instagram.svg" alt="instagram logo" />Instagram</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/facebook.svg" alt="facebook logo" />Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link-logo"
+                  ><img src="./public/icon/twitter.svg" alt="twitter logo" />Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subscription">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter</p>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ginger. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
